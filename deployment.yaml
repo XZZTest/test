@@ -4,7 +4,6 @@ metadata:
   labels:
     app: myserver
   name: myserver
-  namespace: patricktest
 spec:
   replicas: 3
   selector:
