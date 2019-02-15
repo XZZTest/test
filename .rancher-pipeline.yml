@@ -3,7 +3,7 @@ stages:
   steps:
   - runScriptConfig:
       image: golang:latest
-      shellScript: go build -o server server.go
+      shellScript: CGO_ENABLED=0 go build -o server server.go
 - name: push
   steps:
   - publishImageConfig:
