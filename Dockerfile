@@ -1,4 +1,4 @@
-FROM docker.io/alpine
+FROM xiezhunzhi/alpine
 
 COPY server /server
 
