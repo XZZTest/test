@@ -12,9 +12,9 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: patricktest/service:v1
+      tag: xiezhunzhi/testservice:v1
       pushRemote: true
-      registry: 10.19.140.200:29006
+      registry: index.docker.io
 - name: deploy
   steps:
   - applyYamlConfig:
