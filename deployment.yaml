@@ -15,7 +15,7 @@ spec:
         app: myserver
     spec:
       containers:
-      - image: xiezhunzhi/testserver:v1
+      - image: xiezhunzhi/testservice:v1
         imagePullPolicy: Always
         name: server
         resources:
