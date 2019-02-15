@@ -1,0 +1,28 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: myserver
+  name: myserver
+  namespace: patricktest
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: myserver
+  template:
+    metadata:
+      labels:
+        app: myserver
+    spec:
+      containers:
+      - image: 10.19.140.200:29006/patricktest/server:v1
+        imagePullPolicy: Always
+        name: server
+        resources:
+          limits:
+            cpu: 200m
+            memory: 200Mi
+          requests:
+            cpu: 200m
+            memory: 200Mi
