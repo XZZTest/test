@@ -6,9 +6,6 @@ stages:
       shellScript: go build -o server server.go
 - name: push
   steps:
-  - runScriptConfig:
-      image: golang:latest
-      shellScript: sleep 10000
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
