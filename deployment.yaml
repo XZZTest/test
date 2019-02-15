@@ -16,7 +16,7 @@ spec:
         app: myserver
     spec:
       containers:
-      - image: 10.19.140.200:29006/patricktest/server:v1
+      - image: xiezhunzhi/testserver:v1
         imagePullPolicy: Always
         name: server
         resources:
