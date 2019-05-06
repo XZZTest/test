@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 )
-
+// test
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
 	hostname, _ := os.Hostname()
 	fmt.Fprintln(w, "hello , this is "+hostname)
